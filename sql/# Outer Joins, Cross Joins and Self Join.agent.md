@@ -25,7 +25,7 @@ You'll begin with an INNER JOIN with the cities table (left) and countries table
 You'll then change to a LEFT JOIN. This helps if you're interested in returning all countries in the cities table, whether or not they have a match in the countries table.
 
 Perform an inner join with cities AS c1 on the left and countries as c2 on the right.
-Use code as the field to merge your tables on.
+Use code as the field to merge your tables on.  
 
   SELECT 
       c1.name AS city,
