@@ -368,3 +368,9 @@ Set up the CTEs so that the home and away teams each have a name, ID, and score 
 Select the date, home team name, away team name, home goals, and away goals scored in the main query.
 Rank the matches and order by the difference in scores in descending order.
 
+    SELECT
+    *,
+    -- Assign numbers to each row
+    ROW_NUMBER() OVER() AS Row_N
+    FROM Summer_Medals
+    ORDER BY Row_N ASC;
